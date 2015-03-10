@@ -1,0 +1,20 @@
+<MessageCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="messagecollection.xsd">
+
+	<Plugin>
+		<ShortDescription>FooBar method name detector</ShortDescription>
+		<Details><![CDATA[<p>A plugin created for Project Milestone 2.</p>]]></Details>
+	</Plugin>
+
+	<BugCode abbrev="FOOBAR">A bug found by the FOOBAR plugin.</BugCode>
+	
+	<Detector class="org.foobar.FooBarDetector">
+		<Details><![CDATA[<p>Checks if method names are foo or bar</p>]]></Details>
+	</Detector>
+	
+	<BugPattern type="FOO_BAR_METHOD_NAME">
+		<ShortDescription>Method name is foobar</ShortDescription>
+		<LongDescription>Method name is foobar: found foo() or bar() in {0} ({2}). Method is: {1}.</LongDescription>
+		<Details><![CDATA[<p>Provide a meaningfull name to you method. Foobar is usually only useful for sample programs and not suitable for projects.</p>]]></Details>
+	</BugPattern>
+</MessageCollection>

@@ -1,0 +1,10 @@
+<FindbugsPlugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="findbugsplugin.xsd" 
+        pluginid="goel.foobar"
+        provider="Akkaash Goel" 
+        website="http://example.com">
+
+        <Detector class="org.foobar.FooBarDetector" reports="FOO_BAR_METHOD_NAME" speed="fast" />
+        <BugPattern type="FOO_BAR_METHOD_NAME" abbrev="FOOBAR" category="BAD_PRACTICE" />
+
+</FindbugsPlugin>
